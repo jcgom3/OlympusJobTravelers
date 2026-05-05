@@ -229,7 +229,21 @@ function OrderDetail({ order, onToggleStatus }: OrderDetailProps) {
 
         <div className="source-file">
           <FileText size={18} />
-          <span>Source file: {order.sourceFileName}</span>
+
+          {order.sourceFileUrl ? (
+            <a
+              href={order.sourceFileUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="source-link"
+            >
+              Source file: {order.sourceFileName}
+            </a>
+          ) : (
+            <span className="source-file-disabled">
+              Source file unavailable: {order.sourceFileName}
+            </span>
+          )}
         </div>
       </section>
 

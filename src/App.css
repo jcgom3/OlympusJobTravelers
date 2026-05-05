@@ -362,6 +362,22 @@ pre {
   grid-template-columns: 1fr 1fr;
 }
 
+.source-link {
+  color: #172033;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.source-link:hover {
+  text-decoration: underline;
+}
+
+.source-file-disabled {
+  color: #8a94a6;
+  cursor: not-allowed;
+  font-weight: 700;
+}
+
 /* Tablet (iPad, Surface, etc.) */
 @media (max-width: 1024px) {
   .app-shell {

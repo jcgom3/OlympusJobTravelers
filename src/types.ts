@@ -27,5 +27,6 @@ export interface JobTraveler {
   shipDate: string;
   shipTo: string;
   sourceFileName: string;
+  sourceFileUrl?: string;
   sections: JobTravelerSection[];
 }

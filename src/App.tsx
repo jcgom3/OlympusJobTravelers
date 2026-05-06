@@ -250,7 +250,6 @@ function OrderDetail({ order, onToggleStatus }: OrderDetailProps) {
       <section className="translation-section">
         <div className="section-heading">
           <p className="eyebrow">Translated Production Sections</p>
-          <h3>English labels with Spanish content</h3>
         </div>
 
         {order.sections.map((section) => (
